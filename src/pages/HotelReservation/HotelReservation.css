@@ -1,0 +1,14 @@
+.hotel-reservation-page-area {
+    display: grid;
+    grid-template-rows: minmax(100vh, min-content);
+    grid-template-columns: minmax(15vw, min-content) minmax(75vw, min-content);
+    column-gap: 0.8rem;
+
+}
+/* .hotel-reservation-side-content {
+background-color: lightsalmon;
+border-radius: 0.35rem;
+}
+.hotel-reservation-main-content {
+background-color: lightgreen;
+} */

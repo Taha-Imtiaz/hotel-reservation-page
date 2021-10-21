@@ -1,0 +1,10 @@
+.transportation-items-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  font-size: 1.25rem;
+  color: #929090;
+}
+.transportation-items-row img {
+   width: 4rem;
+}

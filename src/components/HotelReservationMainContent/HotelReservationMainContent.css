@@ -1,0 +1,14 @@
+.hotel-reservation-main-content-area {
+    display: grid;
+    grid-template-rows: minmax(15vh, min-content) minmax(85vh, min-content);
+    grid-template-columns: minmax(calc(75vw - 0.8rem),min-content);
+}
+.hotel-reservation-header {
+    display: grid;
+    align-content: center;
+
+}
+.hotel-reservation-list {
+    display: grid;
+    /* background-color: lightsalmon; */
+}
