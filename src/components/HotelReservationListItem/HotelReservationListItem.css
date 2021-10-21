@@ -86,7 +86,7 @@
     line-height: 1.3rem;
     color: #929090;
 }
-.check-in-date, .check-out-date {
+.check-in-date, .check-out-date,.local-time {
     font-size: 1.25rem;
     justify-self: flex-end;
     align-self: flex-end;

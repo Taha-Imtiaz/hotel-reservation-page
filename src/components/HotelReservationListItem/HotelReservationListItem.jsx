@@ -1,3 +1,5 @@
+import { faClock } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import TransportationItems from '../TransportationItems/TransportationItems'
 import "./HotelReservationListItem.css"
@@ -34,7 +36,10 @@ const HotelReservationListItem = (item) => {
                                 <h3>Check out</h3>
                                 <span>{`${new Date().toISOString().split('T')[0]}`.replace(/-/g, '/')}</span>
                             </div>
-                            <div></div>
+                            <div className = "local-time">
+                                <FontAwesomeIcon icon = {faClock}/>
+                                <span>{new Date().toLocaleTimeString()}</span>
+                            </div>
                         </div>
                     </div>
                     <div className="hotel-lower-content-right">
