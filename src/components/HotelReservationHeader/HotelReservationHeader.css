@@ -1,47 +1,47 @@
 .hotel-reservation-header-items {
-    display: grid;
-    grid-template-columns: 7vw calc(38vw - 0.8rem) repeat(3, 10vw); 
-    border-bottom: 1px solid #d3d3d3;   
-    font-size: 1.4rem;
+  display: grid;
+  grid-template-columns: 9vw calc(30vw - 0.8rem) repeat(3, 12vw);
+  border-bottom: 1px solid #d3d3d3;
+  font-size: 1.4rem;
 }
-.hotel-reservation-header-items h3, .hotel-reservation-header-items span {
-    letter-spacing: 0.1rem;
+.hotel-reservation-header-items h3,
+.hotel-reservation-header-items span {
+  letter-spacing: 0.1rem;
 }
 
 .hotel-reservation-filter-button {
-    display: flex;
-    border: 1px solid black;
-    border-radius: 0.3rem;
-    justify-content: space-evenly;
-    margin-right: 1rem;
-    
+  display: flex;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  justify-content: space-evenly;
+  margin-right: 1rem;
 }
 .hotel-reservation-filter-button div {
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.1rem;
-    
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1rem;
 }
 
 .right-bordered {
-    border-right: 2px solid #d3d3d3;
-    
-    
+  border-right: 2px solid #d3d3d3;
 }
 .header-center {
-    font-size: 1.3rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: #7e7a7a;
-    font-family: 'Raleway', sans-serif;
-    
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #7e7a7a;
+  font-family: "Raleway", sans-serif;
+}
+.conditionalStyle {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: black;
 }
 .header-center:hover {
-   font-weight: bold;
-   border-bottom: 2px solid #00c2fd;
-   transition: all 0.3s ease-in-out;
-   font-size: 1.4rem;
-   color: #464545;
-
+  font-weight: bold;
+  border-bottom: 2px solid #00c2fd;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.4rem;
+  color: black;
 }

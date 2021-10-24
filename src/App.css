@@ -1,17 +1,21 @@
 .App {
   display: grid;
-  grid-template-columns:  minmax(90vw, min-content) ;
+  grid-template-columns: minmax(90vw, min-content);
   grid-template-rows: minmax(100vh, min-content);
   align-content: center;
-  justify-content: center;  
+  justify-content: center;
   margin: 1rem 0;
 }
 .hotel-reservation {
-  background: linear-gradient(rgba(235, 235, 235, 0.2),rgba(235, 235, 235, 0.2) );
-color: black;
+  background: linear-gradient(
+    rgba(235, 235, 235, 0.2),
+    rgba(235, 235, 235, 0.2)
+  );
+  color: black;
 }
 .center {
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
+

@@ -6,6 +6,7 @@ import "./HotelReservationListItem.css"
 
 const HotelReservationListItem = (item) => {
     let { name, images, ratings, address, price, transportation, description } = item
+    // console.log(facilities.length,price);
     return (
         <div className="hotel-reservation-list-item">
             <div className="hotel-image">
@@ -28,23 +29,24 @@ const HotelReservationListItem = (item) => {
                         </div>
                         <div className="hotel-description">
                             <h5>{description[0]}</h5>
-                            <div className = "check-in-date">
+                            <div className="check-in-date">
                                 <h3>Check in</h3>
                                 <span>{`${new Date().toISOString().split('T')[0]}`.replace(/-/g, '/')}</span>
                             </div>
-                            <div  className = "check-out-date">
+                            <div className="check-out-date">
                                 <h3>Check out</h3>
                                 <span>{`${new Date().toISOString().split('T')[0]}`.replace(/-/g, '/')}</span>
                             </div>
-                            <div className = "local-time">
-                                <FontAwesomeIcon icon = {faClock}/>
+                            <div className="local-time">
+                                <div style={{ display: "flex", justifyContent: "center" }}><FontAwesomeIcon className = "clock-icon" icon={faClock} /></div>
+
                                 <span>{new Date().toLocaleTimeString()}</span>
                             </div>
                         </div>
                     </div>
                     <div className="hotel-lower-content-right">
                         <div className="price-range">Price Start From:</div>
-                        <div className = "hotel-price">
+                        <div className="hotel-price">
                             <h3 className="center">{`Rs ${price}`}</h3>
                             <span className="conditions center">Taxes and Fees Included</span>
                         </div>

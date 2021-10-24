@@ -1,130 +1,175 @@
 .hotel-reservation-list-item {
-    display: grid;
-    grid-template-rows: minmax(20vh, min-content);
-    grid-template-columns: 20fr 80fr;
-    border-radius: 0.3rem;
-    border: 2px solid #f0f0f0;
-    column-gap: 0.7rem;
-    background-color: #fff;
+  display: grid;
+  grid-template-rows: minmax(20vh, min-content);
+  grid-template-columns: 20fr 80fr;
+  border-radius: 0.3rem;
+  border: 2px solid #f0f0f0;
+  column-gap: 0.7rem;
+  background-color: #fff;
 }
-.hotel-image img{
-    width:100%;
-    height: 100%;
-    border-radius: 0.25rem;
+.hotel-image {
+  display: flex;
+  align-items: center;
+}
+.hotel-image img {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 0.25rem;
 }
 .hotel-image h2 {
-    width:100%;
-    height: 100%;
-    letter-spacing: 0.1rem;
-    border: 1px solid #d3d3d3;
-    border-radius: 0.25rem;
-
-
+  width: 22rem;
+  height: 22rem;
+  letter-spacing: 0.1rem;
+  border: 1px solid #d3d3d3;
+  border-radius: 0.25rem;
 }
 .hotel-content-area {
-    display: grid;
-    grid-template-rows: minmax(4vh,min-content) minmax(16vh,min-content);
+  display: grid;
+  grid-template-rows: minmax(4vh, min-content) minmax(16vh, min-content);
 }
 .hotel-title {
+  display: grid;
+  text-transform: capitalize;
+  grid-template-columns: 82fr repeat(2, 8fr) 2fr;
+  column-gap: 0.4rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #d3d3d3;
+  font-family: "Raleway", sans-serif;
+  align-content: center;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+}
+.hotel-ratings,
+.hotel-type {
+  background-color: #c57b4a;
+  font-family: "Open Sans", sans-serif;
+  padding: 0.2rem 0.6rem 0.2rem;
+  color: #fffdfd;
+  border-radius: 1.25rem;
+}
+.hotel-type {
+  background-color: #ffbf00;
+}
+.hotel-lower-area {
+  display: grid;
+  text-transform: capitalize;
+  grid-template-columns: 82fr 16fr 2fr;
+  margin: 0.75rem 0;
+}
+.hotel-lower-content-left {
+  display: grid;
+  grid-template-rows: repeat(2, 4vh) repeat(auto-fit, minmax(8vh, min-content));
+}
+.hotel-address {
+  font-size: 1.2rem;
+  color: #929090;
+}
+.hotel-address span {
+  color: #00c2fd;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+}
+.transportation-items {
+  display: grid;
+  grid-template-columns: repeat(4, 12.5fr) 50fr;
+  grid-template-rows: minmax(4vh, min-content);
+}
+.hotel-description {
+  display: grid;
+  grid-template-columns: 64fr repeat(3, 12fr);
+  column-gap: 0.5rem;
+  /* align-items: center; */
+}
+.hotel-description h5 {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  color: #929090;
+  letter-spacing: 0.05rem;
+}
+.check-in-date,
+.check-out-date,
+.local-time {
+  font-size: 1rem;
+  justify-self: flex-end;
+  align-self: flex-end;
+  border-left: 2px solid #dad8d8;
+  padding-left: 0.5rem;
+}
+.clock-icon {
+  font-size: 1.3rem;
+}
+.local-time span {
+  font-size: 1rem;
+}
+.hotel-lower-content-right {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-template-rows: repeat(2, minmax(4vh, min-content)) 8vh;
+  border-left: 2px solid #dad8d8;
+  border-radius: 0.15rem;
+}
+.price-range {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.hotel-price {
+  font-size: 1.5rem;
+  color: #00c2fd;
+}
+.conditions {
+  font-size: 1rem;
+  color: #929090;
+}
+.reserve-btn {
+  background-color: #00c2fd;
+  text-transform: uppercase;
+  color: #fffdfd;
+  padding: 0.5rem 1rem;
+  margin: 0.9rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+@media only screen and (max-width: 1200px) {
+  .hotel-title {
     display: grid;
     text-transform: capitalize;
-    grid-template-columns: 82fr repeat(2, 8fr) 2fr;
+    grid-template-columns: 76fr repeat(2, 11fr) 2fr;
     column-gap: 0.4rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     border-bottom: 1px solid #d3d3d3;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     align-content: center;
     letter-spacing: 0.05rem;
     font-weight: bold;
-    
-
-}
-.hotel-ratings,.hotel-type {
-    background-color: #c57b4a;
-    font-family: 'Open Sans', sans-serif;
-    padding: 0.2rem 1rem 0.2rem;
-    color: #fffdfd;
-    border-radius: 1.25rem;
-}
-.hotel-type {
-    background-color:  #FFBF00 ;
-}
-.hotel-lower-area {
+  }
+  .hotel-description {
     display: grid;
-    text-transform: capitalize;
-    grid-template-columns: 82fr 16fr 2fr;
-    margin: 0.75rem 0;
-    
-}
-.hotel-lower-content-left {
-   display: grid;
-   grid-template-rows: repeat(2, 4vh) repeat(auto-fit, minmax(8vh, min-content));
-}
-.hotel-address {
-    font-size: 1.2rem;
-    color: #929090;
-
-}
-.hotel-address span {
-    color: #00c2fd;
-    text-transform: capitalize;
-    font-size: 1.25rem;
-}
-.transportation-items {
-    display: grid;
-    grid-template-columns: repeat(4,12.5fr) 50fr;
-     grid-template-rows: minmax(4vh,min-content);
-}
-.hotel-description {
-    display: grid;
-    grid-template-columns: 64fr repeat(3, 12fr);
+    grid-template-columns: 55fr repeat(3, 15fr);
     column-gap: 0.5rem;
     /* align-items: center; */
+  }
 }
-.hotel-description h5 {
-    font-size: 1.1rem;
-    line-height: 1.3rem;
-    color: #929090;
-}
-.check-in-date, .check-out-date,.local-time {
-    font-size: 1.25rem;
-    justify-self: flex-end;
-    align-self: flex-end;
-    border-left: 2px solid #dad8d8;
-    padding-left: 0.5rem;
-
-}
-.hotel-lower-content-right {
-    display: grid;
-    align-content: center;
-    justify-content: end;
-    grid-template-rows:  repeat(2, minmax(4vh,min-content))  8vh;
-    border-left: 2px solid #dad8d8;
-    border-radius: 0.15rem;
-}
-.price-range {
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-
-}
-.hotel-price {
-    font-size: 2rem;
-    color: #00c2fd;
-}
-.conditions {
-    font-size: 1rem;
-    color: #929090
-}
-.reserve-btn {
-    background-color: #00c2fd;
-    text-transform: uppercase;
-    color: #fffdfd;
-    padding: 0.5rem 1rem;
-    margin: 0.9rem 1rem;
-    font-size: 1.5rem;
+@media only screen and (max-width: 1100px) {
+  .hotel-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hotel-image img {
+    width: 16rem;
+    height: 18rem;
     border-radius: 0.25rem;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-
+    border: 1px solid #d3d3d3;
+  }
+  .hotel-image h2 {
+    width: 16rem;
+    height: 18rem;
+    letter-spacing: 0.1rem;
+    border: 1px solid #d3d3d3;
+    border-radius: 0.25rem;
+  }
 }

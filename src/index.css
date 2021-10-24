@@ -10,6 +10,12 @@ html {
 
 
 }
+@media only screen and (max-width:1250px) {
+  html {
+    font-size: 60%;
+  }
+}
+
 body {
   overflow-x: hidden;
 }

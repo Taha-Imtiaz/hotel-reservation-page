@@ -1,0 +1,66 @@
+.hotel-reservation-filter-area {
+  display: grid;
+  grid-template-rows:
+    minmax(12.5vh, min-content) minmax(20vh, min-content) minmax(
+      12.5vh,
+      min-content
+    )
+    minmax(20vh, min-content);
+  row-gap: 1rem;
+}
+.price-filter {
+  margin: 0 0.75rem;
+}
+
+.price-heading,
+.meal-heading, .hotel-heading, .rating-heading {
+  display: grid;
+  grid-template-columns: 90fr 10fr;
+  align-items: center;
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+.meal-filter,.rating-filter {
+  margin: 0 0.75rem;
+  display: grid;
+  grid-template-rows:
+    minmax(5vh, min-content)
+    minmax(15vh, min-content);
+  row-gap: 0.25rem;
+  /* justify-content: flex-end; */
+  align-items: center;
+  font-size: 1.25rem;
+}
+.meal-filter-options {
+  display: grid;
+  grid-template-columns: 15fr 85fr;
+  grid-template-rows: repeat(5, minmax(3vh, min-content));
+}
+.rating-filter-options {
+  display: grid;
+  grid-template-columns: 15fr 55fr 30fr;
+  grid-template-rows: repeat(5, minmax(3.75vh, min-content));
+}
+.meal-filter span, .hotel-filter span, .rating-filter span {
+  color: rgb(97, 97, 97);
+}
+.hotel-filter {
+  margin: 0 0.75rem;
+  display: grid;
+  grid-template-rows:
+    minmax(5.5vh, min-content)
+    minmax(7vh, min-content);
+  row-gap: 0.25rem;
+  align-items: center;
+  font-size: 1.25rem; 
+}
+.hotel-filter-options {
+    display: grid;
+    grid-template-columns: 15fr 85fr;
+    grid-template-rows: repeat(2, minmax(3.5vh, min-content));
+}
+.star-rating {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
